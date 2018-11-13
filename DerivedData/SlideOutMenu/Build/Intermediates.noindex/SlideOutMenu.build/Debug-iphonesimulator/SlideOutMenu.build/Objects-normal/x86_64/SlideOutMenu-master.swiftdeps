@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
+options: "003671e3490ec832b1e0ac5667562bdb"
+build_time: [1542092678, 172656000]
+inputs:
+  "/Users/udn/SlideOutMenu/SlideOutMenu/ViewController.swift": [1542092678, 0]
+  "/Users/udn/SlideOutMenu/SlideOutMenu/AppDelegate.swift": [1542084283, 0]
