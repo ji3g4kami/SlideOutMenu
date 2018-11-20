@@ -20,12 +20,24 @@ class HomeController: UITableViewController {
         view.backgroundColor = .red
         setupNavigationItems()
         setupMenuController()
+        
+        // Pan gesture
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+        view.addGestureRecognizer(panGesture)
     }
     
-    fileprivate func performAnimations(transform: CGAffineTransform) {
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { [unowned self] in
-            self.menuController.view.transform = transform
-        })
+    @objc func handlePan(gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: view)
+        
+        if gesture.state == .changed {
+            var x = min(translation.x, menuWidth)
+            x = max(x, 0)
+            let transform = CGAffineTransform(translationX: x, y: 0)
+            menuController.view.transform = transform
+            navigationController?.view.transform = transform
+        } else if gesture.state == .ended {
+            handleOpen()
+        }
     }
     
     @objc func handleOpen() {
@@ -34,6 +46,13 @@ class HomeController: UITableViewController {
     
     @objc func handleHide() {
         performAnimations(transform: .identity)
+    }
+    
+    fileprivate func performAnimations(transform: CGAffineTransform) {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { [unowned self] in
+            self.menuController.view.transform = transform
+            self.navigationController?.view.transform = transform
+        })
     }
     
     // MARK: - Basic Setups

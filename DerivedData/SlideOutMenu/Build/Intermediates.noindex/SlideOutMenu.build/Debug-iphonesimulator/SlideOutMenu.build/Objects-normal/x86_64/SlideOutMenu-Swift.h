@@ -197,6 +197,7 @@ SWIFT_CLASS("_TtC12SlideOutMenu11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPanGestureRecognizer;
 @class UITableView;
 @class UITableViewCell;
 @class NSBundle;
@@ -205,6 +206,7 @@ SWIFT_CLASS("_TtC12SlideOutMenu11AppDelegate")
 SWIFT_CLASS("_TtC12SlideOutMenu14HomeController")
 @interface HomeController : UITableViewController
 - (void)viewDidLoad;
+- (void)handlePanWithGesture:(UIPanGestureRecognizer * _Nonnull)gesture;
 - (void)handleOpen;
 - (void)handleHide;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

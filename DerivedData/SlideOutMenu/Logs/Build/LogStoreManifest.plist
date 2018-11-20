@@ -122,6 +122,35 @@
 			<key>uniqueIdentifier</key>
 			<string>255D1343-FC85-4B49-967B-5FB786A5DB20</string>
 		</dict>
+		<key>2D972375-FEC0-4EAC-9575-296BDE94AB4B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2D972375-FEC0-4EAC-9575-296BDE94AB4B.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405351.66748297</real>
+			<key>timeStoppedRecording</key>
+			<real>564405353.81124401</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>2D972375-FEC0-4EAC-9575-296BDE94AB4B</string>
+		</dict>
 		<key>2F145142-8C94-4933-865B-D5D3D9EAF86F</key>
 		<dict>
 			<key>className</key>
@@ -180,6 +209,35 @@
 			<key>uniqueIdentifier</key>
 			<string>45CB7327-781E-4FB7-B7D0-A15D579127AF</string>
 		</dict>
+		<key>56F1B1AE-23B3-4C1E-9C2F-810E4D29C1FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>56F1B1AE-23B3-4C1E-9C2F-810E4D29C1FF.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564406099.377774</real>
+			<key>timeStoppedRecording</key>
+			<real>564406109.80293906</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>56F1B1AE-23B3-4C1E-9C2F-810E4D29C1FF</string>
+		</dict>
 		<key>58DA6E81-5E23-474B-AF86-E6D9D20C44A9</key>
 		<dict>
 			<key>className</key>
@@ -209,6 +267,64 @@
 			<key>uniqueIdentifier</key>
 			<string>58DA6E81-5E23-474B-AF86-E6D9D20C44A9</string>
 		</dict>
+		<key>5F7FA769-9A4C-4296-8137-505D6F827666</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5F7FA769-9A4C-4296-8137-505D6F827666.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405536.17162597</real>
+			<key>timeStoppedRecording</key>
+			<real>564405538.15490496</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>5F7FA769-9A4C-4296-8137-505D6F827666</string>
+		</dict>
+		<key>79F1FBA5-B4F7-4AC0-BAAB-9B216D21916E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>79F1FBA5-B4F7-4AC0-BAAB-9B216D21916E.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405124.155563</real>
+			<key>timeStoppedRecording</key>
+			<real>564405124.27714002</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>79F1FBA5-B4F7-4AC0-BAAB-9B216D21916E</string>
+		</dict>
 		<key>7BE82A1E-0CA5-4E57-8E22-B1603CB16236</key>
 		<dict>
 			<key>className</key>
@@ -237,6 +353,64 @@
 			<string>Build SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
 			<string>7BE82A1E-0CA5-4E57-8E22-B1603CB16236</string>
+		</dict>
+		<key>7CF2671D-FFED-483A-BDF4-6F156A502B34</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7CF2671D-FFED-483A-BDF4-6F156A502B34.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405944.53631496</real>
+			<key>timeStoppedRecording</key>
+			<real>564405946.16126204</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>7CF2671D-FFED-483A-BDF4-6F156A502B34</string>
+		</dict>
+		<key>84C202E6-0C89-426F-BC15-4C90169C0950</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>84C202E6-0C89-426F-BC15-4C90169C0950.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405414.52450097</real>
+			<key>timeStoppedRecording</key>
+			<real>564405416.32407606</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>84C202E6-0C89-426F-BC15-4C90169C0950</string>
 		</dict>
 		<key>8CF18587-5E4E-4F8D-9F67-AAD10F5042B1</key>
 		<dict>
@@ -324,6 +498,35 @@
 			<string>Build SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
 			<string>A3666EC6-3E1C-40F1-AA9D-E2AA9B0C3B26</string>
+		</dict>
+		<key>A878983B-9831-4366-BFFC-8F79014FF4E8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A878983B-9831-4366-BFFC-8F79014FF4E8.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405196.96639395</real>
+			<key>timeStoppedRecording</key>
+			<real>564405198.57217002</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>A878983B-9831-4366-BFFC-8F79014FF4E8</string>
 		</dict>
 		<key>ACFB8026-1137-4CF4-AF03-E6A64B1217C0</key>
 		<dict>
@@ -441,6 +644,35 @@
 			<key>uniqueIdentifier</key>
 			<string>C47B77C1-B3F1-414E-B734-D8E0305D08C6</string>
 		</dict>
+		<key>C6B98AB7-1428-4173-BE45-D90AAE90B0F5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C6B98AB7-1428-4173-BE45-D90AAE90B0F5.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564406288.85951304</real>
+			<key>timeStoppedRecording</key>
+			<real>564406292.66005898</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>C6B98AB7-1428-4173-BE45-D90AAE90B0F5</string>
+		</dict>
 		<key>C843A45A-0B63-439D-B740-41D23ACF87C0</key>
 		<dict>
 			<key>className</key>
@@ -557,6 +789,35 @@
 			<key>uniqueIdentifier</key>
 			<string>E40BEA9C-CF58-45BE-BC93-3CA7521E0D20</string>
 		</dict>
+		<key>E7072A60-2B9D-4298-AE1F-130A3441E042</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E7072A60-2B9D-4298-AE1F-130A3441E042.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405601.12289095</real>
+			<key>timeStoppedRecording</key>
+			<real>564405602.71081805</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>E7072A60-2B9D-4298-AE1F-130A3441E042</string>
+		</dict>
 		<key>EED5C6A0-EBDB-46D7-A262-368DBB700A54</key>
 		<dict>
 			<key>className</key>
@@ -585,6 +846,35 @@
 			<string>Build SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
 			<string>EED5C6A0-EBDB-46D7-A262-368DBB700A54</string>
+		</dict>
+		<key>F2EE7C84-8E7D-45B8-AB21-2489EDC2EC59</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F2EE7C84-8E7D-45B8-AB21-2489EDC2EC59.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564406066.70192504</real>
+			<key>timeStoppedRecording</key>
+			<real>564406068.28282106</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>F2EE7C84-8E7D-45B8-AB21-2489EDC2EC59</string>
 		</dict>
 		<key>F3CCD4C0-DACE-4377-B0D6-D7363C47098E</key>
 		<dict>
@@ -672,6 +962,35 @@
 			<string>Build SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
 			<string>FDA50FD7-A3D5-4919-9ABC-162490B86929</string>
+		</dict>
+		<key>FE8F0D45-BDD2-45E0-AC38-916D5B44E214</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FE8F0D45-BDD2-45E0-AC38-916D5B44E214.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>SlideOutMenu project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>SlideOutMenu</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build SlideOutMenu</string>
+			<key>timeStartedRecording</key>
+			<real>564405027.97919798</real>
+			<key>timeStoppedRecording</key>
+			<real>564405029.65917206</real>
+			<key>title</key>
+			<string>Build SlideOutMenu</string>
+			<key>uniqueIdentifier</key>
+			<string>FE8F0D45-BDD2-45E0-AC38-916D5B44E214</string>
 		</dict>
 	</dict>
 </dict>
