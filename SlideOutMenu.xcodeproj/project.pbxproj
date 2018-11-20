@@ -11,6 +11,7 @@
 		403B7AEE219A8CFE000B6A88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B7AED219A8CFE000B6A88 /* ViewController.swift */; };
 		403B7AF3219A8CFF000B6A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403B7AF2219A8CFF000B6A88 /* Assets.xcassets */; };
 		403B7AF6219A8CFF000B6A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403B7AF4219A8CFF000B6A88 /* LaunchScreen.storyboard */; };
+		40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4421A3FFCA002AC3F9 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		403B7AF2219A8CFF000B6A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		403B7AF5219A8CFF000B6A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		403B7AF7219A8CFF000B6A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40805A4421A3FFCA002AC3F9 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 		403B7AEA219A8CFE000B6A88 /* SlideOutMenu */ = {
 			isa = PBXGroup;
 			children = (
+				40805A4321A3FFA0002AC3F9 /* Controller */,
 				403B7AEB219A8CFE000B6A88 /* AppDelegate.swift */,
 				403B7AED219A8CFE000B6A88 /* ViewController.swift */,
 				403B7AF2219A8CFF000B6A88 /* Assets.xcassets */,
@@ -59,6 +62,14 @@
 				403B7AF7219A8CFF000B6A88 /* Info.plist */,
 			);
 			path = SlideOutMenu;
+			sourceTree = "<group>";
+		};
+		40805A4321A3FFA0002AC3F9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40805A4421A3FFCA002AC3F9 /* MenuController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				403B7AEE219A8CFE000B6A88 /* ViewController.swift in Sources */,
+				40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */,
 				403B7AEC219A8CFE000B6A88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>32E84530-F878-481B-8019-4254FFB9D98A</key>
+		<key>527C7393-BE1D-4033-B9DC-C1042484B419</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>32E84530-F878-481B-8019-4254FFB9D98A.xcactivitylog</string>
+			<string>527C7393-BE1D-4033-B9DC-C1042484B419.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -27,15 +27,15 @@
 			<key>signature</key>
 			<string>Debug SlideOutMenu</string>
 			<key>timeStartedRecording</key>
-			<real>563785480.02809596</real>
+			<real>564395525.04350901</real>
 			<key>timeStoppedRecording</key>
-			<real>563785500.98965597</real>
+			<real>564395561.45302904</real>
 			<key>title</key>
 			<string>Debug SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
-			<string>32E84530-F878-481B-8019-4254FFB9D98A</string>
+			<string>527C7393-BE1D-4033-B9DC-C1042484B419</string>
 		</dict>
-		<key>42C98DFF-772F-4A30-8524-7D1DF16ECAF5</key>
+		<key>7F8EA0BA-9D11-4100-B3F5-51644361C4D0</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -44,7 +44,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>42C98DFF-772F-4A30-8524-7D1DF16ECAF5.xcactivitylog</string>
+			<string>7F8EA0BA-9D11-4100-B3F5-51644361C4D0.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -56,15 +56,15 @@
 			<key>signature</key>
 			<string>Debug SlideOutMenu</string>
 			<key>timeStartedRecording</key>
-			<real>563785173.69871998</real>
+			<real>563786752.52759004</real>
 			<key>timeStoppedRecording</key>
-			<real>563785182.63686001</real>
+			<real>563786761.59461296</real>
 			<key>title</key>
 			<string>Debug SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
-			<string>42C98DFF-772F-4A30-8524-7D1DF16ECAF5</string>
+			<string>7F8EA0BA-9D11-4100-B3F5-51644361C4D0</string>
 		</dict>
-		<key>716CDED9-8865-4B36-AF05-C00B1A32A3DC</key>
+		<key>9453F8D8-6A5C-4C9D-B068-4FD3045D956C</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -73,7 +73,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>716CDED9-8865-4B36-AF05-C00B1A32A3DC.xcactivitylog</string>
+			<string>9453F8D8-6A5C-4C9D-B068-4FD3045D956C.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -85,15 +85,15 @@
 			<key>signature</key>
 			<string>Debug SlideOutMenu</string>
 			<key>timeStartedRecording</key>
-			<real>563777380.50260794</real>
+			<real>564395728.79570794</real>
 			<key>timeStoppedRecording</key>
-			<real>563777388.70080996</real>
+			<real>564395814.21758997</real>
 			<key>title</key>
 			<string>Debug SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
-			<string>716CDED9-8865-4B36-AF05-C00B1A32A3DC</string>
+			<string>9453F8D8-6A5C-4C9D-B068-4FD3045D956C</string>
 		</dict>
-		<key>B7AF4F4F-7166-49CD-B67E-C75992A0CACC</key>
+		<key>D4BB49F0-027E-439F-8AD5-B2C3985D929A</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -102,7 +102,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B7AF4F4F-7166-49CD-B67E-C75992A0CACC.xcactivitylog</string>
+			<string>D4BB49F0-027E-439F-8AD5-B2C3985D929A.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -114,15 +114,15 @@
 			<key>signature</key>
 			<string>Debug SlideOutMenu</string>
 			<key>timeStartedRecording</key>
-			<real>563777154.25399196</real>
+			<real>564396030.78672194</real>
 			<key>timeStoppedRecording</key>
-			<real>563777163.09336197</real>
+			<real>564396053.792943</real>
 			<key>title</key>
 			<string>Debug SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
-			<string>B7AF4F4F-7166-49CD-B67E-C75992A0CACC</string>
+			<string>D4BB49F0-027E-439F-8AD5-B2C3985D929A</string>
 		</dict>
-		<key>D53B8276-49D7-462F-BDB2-BF11A14394A5</key>
+		<key>F72323EC-E859-4AE0-88A2-80DAEBCC890E</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -131,7 +131,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>D53B8276-49D7-462F-BDB2-BF11A14394A5.xcactivitylog</string>
+			<string>F72323EC-E859-4AE0-88A2-80DAEBCC890E.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>schemeIdentifier-containerName</key>
@@ -143,129 +143,13 @@
 			<key>signature</key>
 			<string>Debug SlideOutMenu</string>
 			<key>timeStartedRecording</key>
-			<real>563785043.70570099</real>
+			<real>564395894.82544196</real>
 			<key>timeStoppedRecording</key>
-			<real>563785063.83930898</real>
+			<real>564395905.75959694</real>
 			<key>title</key>
 			<string>Debug SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
-			<string>D53B8276-49D7-462F-BDB2-BF11A14394A5</string>
-		</dict>
-		<key>E5BFA5BF-9984-4DE0-A45A-39E65DDBEBC6</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E5BFA5BF-9984-4DE0-A45A-39E65DDBEBC6.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SlideOutMenu project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SlideOutMenu</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SlideOutMenu</string>
-			<key>timeStartedRecording</key>
-			<real>563777087.40558302</real>
-			<key>timeStoppedRecording</key>
-			<real>563777096.15884805</real>
-			<key>title</key>
-			<string>Debug SlideOutMenu</string>
-			<key>uniqueIdentifier</key>
-			<string>E5BFA5BF-9984-4DE0-A45A-39E65DDBEBC6</string>
-		</dict>
-		<key>E8F00EF7-DDC8-49C0-AE43-0887AD003383</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E8F00EF7-DDC8-49C0-AE43-0887AD003383.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SlideOutMenu project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SlideOutMenu</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SlideOutMenu</string>
-			<key>timeStartedRecording</key>
-			<real>563777334.99154305</real>
-			<key>timeStoppedRecording</key>
-			<real>563777345.40560699</real>
-			<key>title</key>
-			<string>Debug SlideOutMenu</string>
-			<key>uniqueIdentifier</key>
-			<string>E8F00EF7-DDC8-49C0-AE43-0887AD003383</string>
-		</dict>
-		<key>F647FF3C-F09F-43E8-A2B5-F6A5D26D0FD3</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F647FF3C-F09F-43E8-A2B5-F6A5D26D0FD3.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SlideOutMenu project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SlideOutMenu</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SlideOutMenu</string>
-			<key>timeStartedRecording</key>
-			<real>563776859.57235301</real>
-			<key>timeStoppedRecording</key>
-			<real>563776902.16842401</real>
-			<key>title</key>
-			<string>Debug SlideOutMenu</string>
-			<key>uniqueIdentifier</key>
-			<string>F647FF3C-F09F-43E8-A2B5-F6A5D26D0FD3</string>
-		</dict>
-		<key>F8960877-9067-4C12-B334-7473C7082812</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>F8960877-9067-4C12-B334-7473C7082812.xcactivitylog</string>
-			<key>highLevelStatus</key>
-			<string>S</string>
-			<key>schemeIdentifier-containerName</key>
-			<string>SlideOutMenu project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>SlideOutMenu</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Debug SlideOutMenu</string>
-			<key>timeStartedRecording</key>
-			<real>563777189.19743502</real>
-			<key>timeStoppedRecording</key>
-			<real>563777198.09670806</real>
-			<key>title</key>
-			<string>Debug SlideOutMenu</string>
-			<key>uniqueIdentifier</key>
-			<string>F8960877-9067-4C12-B334-7473C7082812</string>
+			<string>F72323EC-E859-4AE0-88A2-80DAEBCC890E</string>
 		</dict>
 	</dict>
 </dict>

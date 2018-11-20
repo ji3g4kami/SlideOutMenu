@@ -197,10 +197,19 @@ SWIFT_CLASS("_TtC12SlideOutMenu11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC12SlideOutMenu14MenuController")
+@interface MenuController : UITableViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITableView;
+@class UITableViewCell;
 
 SWIFT_CLASS("_TtC12SlideOutMenu14ViewController")
 @interface ViewController : UITableViewController
