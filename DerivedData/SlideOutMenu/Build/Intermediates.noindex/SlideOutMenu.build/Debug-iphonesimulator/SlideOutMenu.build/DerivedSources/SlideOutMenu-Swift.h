@@ -197,25 +197,27 @@ SWIFT_CLASS("_TtC12SlideOutMenu11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
+@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC12SlideOutMenu14MenuController")
-@interface MenuController : UITableViewController
+SWIFT_CLASS("_TtC12SlideOutMenu14HomeController")
+@interface HomeController : UITableViewController
 - (void)viewDidLoad;
+- (void)handleOpen;
+- (void)handleHide;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
-@class UITableViewCell;
 
-SWIFT_CLASS("_TtC12SlideOutMenu14ViewController")
-@interface ViewController : UITableViewController
+SWIFT_CLASS("_TtC12SlideOutMenu14MenuController")
+@interface MenuController : UITableViewController
 - (void)viewDidLoad;
-- (void)handleOpen;
-- (void)handleHide;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;

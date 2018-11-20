@@ -8,27 +8,41 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+let screenBounds = UIScreen.main.bounds
+let menuWidth = UIScreen.main.bounds.width * 0.8
+
+class HomeController: UITableViewController {
     
+    let menuController = MenuController()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
         setupNavigationItems()
+        setupMenuController()
+    }
+    
+    fileprivate func performAnimations(transform: CGAffineTransform) {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { [unowned self] in
+            self.menuController.view.transform = transform
+        })
     }
     
     @objc func handleOpen() {
-        print("Open")
-        
-        let vc = MenuController()
-        
-        vc.view.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width * 0.8, height: self.view.frame.height)
-        
-        let mainWindow = UIApplication.shared.keyWindow
-        mainWindow?.addSubview(vc.view)
+        performAnimations(transform: CGAffineTransform(translationX: menuWidth, y: 0))
     }
     
     @objc func handleHide() {
-        print("Hide")
+        performAnimations(transform: .identity)
+    }
+    
+    // MARK: - Basic Setups
+    
+    fileprivate func setupMenuController() {
+        let mainWindow = UIApplication.shared.keyWindow
+        mainWindow?.addSubview(menuController.view)
+        menuController.view.frame = CGRect(x: -menuWidth, y: 0, width: menuWidth, height: screenBounds.height)
+        addChild(menuController)
     }
     
     fileprivate func setupNavigationItems() {
