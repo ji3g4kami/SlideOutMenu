@@ -14,6 +14,7 @@ let velocityOpenThreshold: CGFloat = 500
 
 class HomeController: UITableViewController {
     
+    let darkCoverView = UIView()
     let menuController = MenuController()
     fileprivate var isMenuOpen = false
 
@@ -22,10 +23,8 @@ class HomeController: UITableViewController {
         view.backgroundColor = .red
         setupNavigationItems()
         setupMenuController()
-        
-        // Pan gesture
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-        view.addGestureRecognizer(panGesture)
+        setupPanGesture()
+        setupDarkCoverView()
     }
     
     @objc func handlePan(gesture: UIPanGestureRecognizer) {
@@ -41,6 +40,9 @@ class HomeController: UITableViewController {
             let transform = CGAffineTransform(translationX: x, y: 0)
             menuController.view.transform = transform
             navigationController?.view.transform = transform
+            darkCoverView.transform = navigationController?.view.transform ?? transform
+            
+            darkCoverView.alpha = x / menuWidth
         } else if gesture.state == .ended {
             handleEnded(gesture: gesture)
         }
@@ -86,10 +88,26 @@ class HomeController: UITableViewController {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: { [unowned self] in
             self.menuController.view.transform = transform
             self.navigationController?.view.transform = transform
+            self.darkCoverView.transform = self.navigationController?.view.transform ?? transform
+            self.darkCoverView.alpha = transform == .identity ? 0 : 1
         })
     }
     
     // MARK: - Basic Setups
+    
+    fileprivate func setupDarkCoverView() {
+        darkCoverView.alpha = 0
+        darkCoverView.backgroundColor = UIColor(white: 0, alpha: 0.8)
+        darkCoverView.isUserInteractionEnabled = false
+        let mainWindow = UIApplication.shared.keyWindow
+        mainWindow?.addSubview(darkCoverView)
+        darkCoverView.frame = screenBounds
+    }
+    
+    fileprivate func setupPanGesture() {
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+        view.addGestureRecognizer(panGesture)
+    }
     
     fileprivate func setupMenuController() {
         let mainWindow = UIApplication.shared.keyWindow
