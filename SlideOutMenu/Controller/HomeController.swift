@@ -10,25 +10,15 @@ import UIKit
 
 class HomeController: UITableViewController, UIGestureRecognizerDelegate {
     
-    let darkCoverView = UIView()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
         setupNavigationItems()
-        setupDarkCoverView()
     }
     
     // MARK: - Basic Setups
-    
-    fileprivate func setupDarkCoverView() {
-        darkCoverView.alpha = 0
-        darkCoverView.backgroundColor = UIColor(white: 0, alpha: 0.8)
-        darkCoverView.isUserInteractionEnabled = false
-        let mainWindow = UIApplication.shared.keyWindow
-        mainWindow?.addSubview(darkCoverView)
-        darkCoverView.frame = screenBounds
-    }
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
