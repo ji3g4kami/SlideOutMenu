@@ -14,8 +14,8 @@ class MenuController: UITableViewController {
         super.viewDidLoad()
         tableView.backgroundColor = .blue
         
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
-        self.view.addGestureRecognizer(panGesture)
+//        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
+//        self.view.addGestureRecognizer(panGesture)
     }
 
     @objc func handlePan(gesture: UIPanGestureRecognizer) {

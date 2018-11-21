@@ -198,17 +198,25 @@ SWIFT_CLASS("_TtC12SlideOutMenu11AppDelegate")
 @end
 
 @class UIPanGestureRecognizer;
-@class UITableView;
-@class UITableViewCell;
 @class NSBundle;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC12SlideOutMenu14HomeController")
-@interface HomeController : UITableViewController
+SWIFT_CLASS("_TtC12SlideOutMenu21BaseSlidingController")
+@interface BaseSlidingController : UIViewController
 - (void)viewDidLoad;
 - (void)handlePanWithGesture:(UIPanGestureRecognizer * _Nonnull)gesture;
-- (void)handleOpen;
-- (void)handleHide;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIGestureRecognizer;
+@class UITableView;
+@class UITableViewCell;
+
+SWIFT_CLASS("_TtC12SlideOutMenu14HomeController")
+@interface HomeController : UITableViewController <UIGestureRecognizerDelegate>
+- (void)viewDidLoad;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
@@ -220,6 +228,7 @@ SWIFT_CLASS("_TtC12SlideOutMenu14HomeController")
 SWIFT_CLASS("_TtC12SlideOutMenu14MenuController")
 @interface MenuController : UITableViewController
 - (void)viewDidLoad;
+- (void)handlePanWithGesture:(UIPanGestureRecognizer * _Nonnull)gesture;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;

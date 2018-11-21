@@ -10,7 +10,9 @@ import UIKit
 
 class BaseSlidingController: UIViewController {
     
-    var redLeadingConstrant: NSLayoutConstraint!
+    fileprivate var isMenuOpened = false
+    
+    var redViewLeadingConstraint: NSLayoutConstraint!
     
     let redView: UIView = {
         let view = UIView()
@@ -40,8 +42,31 @@ class BaseSlidingController: UIViewController {
     @objc func handlePan(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: view)
         var x = translation.x
+        
+        x = isMenuOpened ? x + menuWidth : x
+        
         x = min(menuWidth, x)
-        redLeadingConstrant.constant = x 
+        x = max(0, x)
+        redViewLeadingConstraint.constant = x
+        
+        if gesture.state == .ended {
+            handleEnded(gesture: gesture)
+        }
+    }
+    
+    fileprivate func handleEnded(gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: view)
+        if translation.x < menuWidth/2 {
+            isMenuOpened = false
+            redViewLeadingConstraint.constant = 0
+        } else {
+            isMenuOpened = true
+            redViewLeadingConstraint.constant = menuWidth
+        }
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: { [unowned self] in
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
     
     fileprivate func setupViews() {
@@ -54,16 +79,49 @@ class BaseSlidingController: UIViewController {
             redView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
-        redLeadingConstrant = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0)
-        redLeadingConstrant.isActive = true
+        redViewLeadingConstraint = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0)
+        redViewLeadingConstraint.isActive = true
         
         
         NSLayoutConstraint.activate([
             blueView.topAnchor.constraint(equalTo: view.topAnchor),
-            blueView.trailingAnchor.constraint(equalTo: redView.leadingAnchor),
+            blueView.trailingAnchor.constraint(equalTo: redView.safeAreaLayoutGuide.leadingAnchor),
             blueView.widthAnchor.constraint(equalToConstant: menuWidth),
             blueView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+        
+        setupViewControllers()
+    }
+    
+    fileprivate func setupViewControllers() {
+        let homeController = HomeController()
+        let menuController = MenuController()
+        
+        let homeView = homeController.view!
+        let menuView = menuController.view!
+        
+        homeView.translatesAutoresizingMaskIntoConstraints = false
+        menuView.translatesAutoresizingMaskIntoConstraints = false
+        
+        redView.addSubview(homeView)
+        blueView.addSubview(menuView)
+        
+        NSLayoutConstraint.activate([
+            homeView.topAnchor.constraint(equalTo: redView.topAnchor),
+            homeView.leadingAnchor.constraint(equalTo: redView.leadingAnchor),
+            homeView.bottomAnchor.constraint(equalTo: redView.bottomAnchor),
+            homeView.trailingAnchor.constraint(equalTo: redView.trailingAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            menuView.topAnchor.constraint(equalTo: blueView.topAnchor),
+            menuView.leadingAnchor.constraint(equalTo: blueView.leadingAnchor),
+            menuView.bottomAnchor.constraint(equalTo: blueView.bottomAnchor),
+            menuView.trailingAnchor.constraint(equalTo: blueView.trailingAnchor)
+        ])
+        
+        addChild(homeController)
+        addChild(menuController)
     }
 
 }
