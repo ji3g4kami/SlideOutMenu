@@ -6,7 +6,7 @@
 	<integer>9</integer>
 	<key>logs</key>
 	<dict>
-		<key>B17EF8F8-550F-4514-BA0E-EB7DE8201A45</key>
+		<key>CCC296DC-0308-4F6D-8897-2C1B2B702ABC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,19 +15,19 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>B17EF8F8-550F-4514-BA0E-EB7DE8201A45.xcactivitylog</string>
+			<string>CCC296DC-0308-4F6D-8897-2C1B2B702ABC.xcactivitylog</string>
 			<key>highLevelStatus</key>
 			<string>S</string>
 			<key>signature</key>
 			<string>SlideOutMenu-clpfsllrwukmxtcgadpvtgmzwsjr</string>
 			<key>timeStartedRecording</key>
-			<real>564460460.26829004</real>
+			<real>564463588.01728404</real>
 			<key>timeStoppedRecording</key>
-			<real>564460465.13499796</real>
+			<real>564463591.82287896</real>
 			<key>title</key>
 			<string>Build target SlideOutMenu</string>
 			<key>uniqueIdentifier</key>
-			<string>B17EF8F8-550F-4514-BA0E-EB7DE8201A45</string>
+			<string>CCC296DC-0308-4F6D-8897-2C1B2B702ABC</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
