@@ -14,6 +14,8 @@
 		40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4421A3FFCA002AC3F9 /* MenuController.swift */; };
 		40805A4821A509EC002AC3F9 /* BaseSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */; };
 		40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4921A54E09002AC3F9 /* Constants.swift */; };
+		40805A4D21A64C9C002AC3F9 /* CustomMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4C21A64C9C002AC3F9 /* CustomMenuHeaderView.swift */; };
+		40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4E21A657E4002AC3F9 /* SpacerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		40805A4421A3FFCA002AC3F9 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingController.swift; sourceTree = "<group>"; };
 		40805A4921A54E09002AC3F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40805A4C21A64C9C002AC3F9 /* CustomMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuHeaderView.swift; sourceTree = "<group>"; };
+		40805A4E21A657E4002AC3F9 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		403B7AEA219A8CFE000B6A88 /* SlideOutMenu */ = {
 			isa = PBXGroup;
 			children = (
+				40805A4B21A64C7D002AC3F9 /* View */,
 				40805A4321A3FFA0002AC3F9 /* Controller */,
 				403B7AEB219A8CFE000B6A88 /* AppDelegate.swift */,
 				403B7AF2219A8CFF000B6A88 /* Assets.xcassets */,
@@ -84,6 +89,15 @@
 				40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		40805A4B21A64C7D002AC3F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40805A4C21A64C9C002AC3F9 /* CustomMenuHeaderView.swift */,
+				40805A4E21A657E4002AC3F9 /* SpacerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */,
 				40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */,
+				40805A4D21A64C9C002AC3F9 /* CustomMenuHeaderView.swift in Sources */,
 				403B7AEE219A8CFE000B6A88 /* HomeController.swift in Sources */,
 				40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */,
 				403B7AEC219A8CFE000B6A88 /* AppDelegate.swift in Sources */,
