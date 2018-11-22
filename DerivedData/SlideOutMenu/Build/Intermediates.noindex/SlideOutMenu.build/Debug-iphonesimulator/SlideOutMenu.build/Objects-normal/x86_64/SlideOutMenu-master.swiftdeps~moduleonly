@@ -1,9 +1,0 @@
-version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
-options: "003671e3490ec832b1e0ac5667562bdb"
-build_time: [1542789881, 815587000]
-inputs:
-  "/Users/udn/SlideOutMenu/SlideOutMenu/Constants.swift": [1542788816, 0]
-  "/Users/udn/SlideOutMenu/SlideOutMenu/Controller/HomeController.swift": [1542788807, 0]
-  "/Users/udn/SlideOutMenu/SlideOutMenu/Controller/MenuController.swift": [1542788185, 0]
-  "/Users/udn/SlideOutMenu/SlideOutMenu/AppDelegate.swift": [1542772291, 0]
-  "/Users/udn/SlideOutMenu/SlideOutMenu/Controller/Base/BaseSlidingController.swift": [1542789881, 0]
