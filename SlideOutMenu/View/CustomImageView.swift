@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileImageView: UIImageView {
+class CustomImageView: UIImageView {
 
     let width: CGFloat
     let height: CGFloat
@@ -23,7 +23,6 @@ class ProfileImageView: UIImageView {
         super.init(frame: .zero)
         self.layer.cornerRadius = self.width/2
         self.clipsToBounds = true
-        self.backgroundColor = .red
     }
     
     required init?(coder aDecoder: NSCoder) {

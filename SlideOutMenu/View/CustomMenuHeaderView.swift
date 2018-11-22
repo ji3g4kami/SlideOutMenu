@@ -13,7 +13,7 @@ class CustomMenuHeaderView: UIView {
     let nameLabel = UILabel()
     let userNameLabel = UILabel()
     let statsLabel = UILabel()
-    let profileImageView = ProfileImageView(width: 48, height: 48)
+    let profileImageView = CustomImageView(width: 48, height: 48)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,7 +39,7 @@ class CustomMenuHeaderView: UIView {
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor)
-            ])
+        ])
         
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.layoutMargins = UIEdgeInsets(top: 24, left: 24, bottom: 24, right: 24)
