@@ -16,6 +16,7 @@
 		40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4921A54E09002AC3F9 /* Constants.swift */; };
 		40805A4D21A64C9C002AC3F9 /* CustomMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4C21A64C9C002AC3F9 /* CustomMenuHeaderView.swift */; };
 		40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4E21A657E4002AC3F9 /* SpacerView.swift */; };
+		40805A5121A66416002AC3F9 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5021A66416002AC3F9 /* ProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		40805A4921A54E09002AC3F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		40805A4C21A64C9C002AC3F9 /* CustomMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMenuHeaderView.swift; sourceTree = "<group>"; };
 		40805A4E21A657E4002AC3F9 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
+		40805A5021A66416002AC3F9 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				40805A4C21A64C9C002AC3F9 /* CustomMenuHeaderView.swift */,
 				40805A4E21A657E4002AC3F9 /* SpacerView.swift */,
+				40805A5021A66416002AC3F9 /* ProfileImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40805A5121A66416002AC3F9 /* ProfileImageView.swift in Sources */,
 				40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */,
 				40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */,
 				40805A4D21A64C9C002AC3F9 /* CustomMenuHeaderView.swift in Sources */,

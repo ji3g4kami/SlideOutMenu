@@ -13,6 +13,7 @@ class CustomMenuHeaderView: UIView {
     let nameLabel = UILabel()
     let userNameLabel = UILabel()
     let statsLabel = UILabel()
+    let profileImageView = ProfileImageView(width: 48, height: 48)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +24,7 @@ class CustomMenuHeaderView: UIView {
     
     fileprivate func setupStackView() {
         let arrangedSubViews = [
-            UIView(), nameLabel, userNameLabel ,statsLabel
+            UIStackView(arrangedSubviews: [profileImageView, UIView()]), nameLabel, userNameLabel ,statsLabel
         ]
         
         let stackView = UIStackView(arrangedSubviews: arrangedSubViews)
@@ -45,10 +46,22 @@ class CustomMenuHeaderView: UIView {
     }
     
     fileprivate func setupComponentsProperties() {
-        nameLabel.text = "David Wu"
+        nameLabel.text = "Peter"
         nameLabel.font = UIFont.systemFont(ofSize: 20, weight: .heavy)
-        userNameLabel.text = "@ji3g4kami"
-        statsLabel.text = "28 Following 56 Followers"
+        userNameLabel.text = "@peterchen"
+        profileImageView.image = UIImage(named: "Peter")
+        profileImageView.contentMode = .scaleAspectFit
+        
+        setupAttributedText()
+    }
+    
+    fileprivate func setupAttributedText() {
+        statsLabel.font = UIFont.systemFont(ofSize: 14)
+        let attributedText = NSMutableAttributedString(string: "151 ", attributes: [.font: UIFont.systemFont(ofSize: 17, weight: .medium)])
+        attributedText.append(NSMutableAttributedString(string: "Following  ", attributes: [.foregroundColor: UIColor.black]))
+        attributedText.append(NSMutableAttributedString(string: "38 ", attributes: [.font: UIFont.systemFont(ofSize: 17, weight: .medium)]))
+        attributedText.append(NSMutableAttributedString(string: "Followers", attributes: [.foregroundColor: UIColor.black]))
+        statsLabel.attributedText = attributedText
     }
     
     required init?(coder aDecoder: NSCoder) {
