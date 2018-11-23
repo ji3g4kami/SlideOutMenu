@@ -15,6 +15,9 @@ class ListsController: UIViewController {
 
         view.backgroundColor = .white
         
+        navigationItem.title = "Lists"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
         let label = UILabel()
         label.text = "Lists"
         label.font = UIFont.boldSystemFont(ofSize: 64)

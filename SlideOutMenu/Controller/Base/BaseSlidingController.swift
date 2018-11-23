@@ -15,7 +15,7 @@ class DarkCoverView: UIView {}
 class BaseSlidingController: UIViewController {
     
     fileprivate var isMenuOpened = false
-    fileprivate var centerViewController: UIViewController = HomeController() {
+    fileprivate var centerViewController: UIViewController = UINavigationController(rootViewController: HomeController()) {
         didSet {
             oldValue.view.removeFromSuperview()
             oldValue.removeFromParent()
@@ -100,33 +100,40 @@ class BaseSlidingController: UIViewController {
         
     }
     
-    fileprivate func openMenu() {
+    func openMenu() {
         isMenuOpened = true
         redViewLeadingConstraint.constant = menuWidth
         performAnimations()
     }
 
-    fileprivate func closeMenu() {
+    func closeMenu() {
         isMenuOpened = false
         redViewLeadingConstraint.constant = 0
         performAnimations()
     }
     
     func didSelectMenuItem(indexPath: IndexPath) {
+        closeMenu()
         
         switch indexPath.row {
         case 0:
-            changeCenterController(to: HomeController())
+            changeCenterController(to: UINavigationController(rootViewController: HomeController()))
         case 1:
-            changeCenterController(to: ListsController())
+            changeCenterController(to: UINavigationController(rootViewController: ListsController()))
         case 2:
             changeCenterController(to: BookmarksController())
         default:
-            print("Moments")
+            let tabBarController = UITabBarController()
+            let momentsController = UIViewController()
+            momentsController.navigationItem.title = "Moments"
+            momentsController.view.backgroundColor = .orange
+            let navController = UINavigationController(rootViewController: momentsController)
+            navController.tabBarItem.title = "Moments"
+            tabBarController.viewControllers = [navController]
+            changeCenterController(to: tabBarController)
         }
         
         redView.bringSubviewToFront(darkCoverView)
-        closeMenu()
     }
     
     fileprivate func changeCenterController(to viewController: UIViewController) {
