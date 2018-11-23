@@ -8,28 +8,37 @@
 
 import UIKit
 
+class CenterView: UIView {}
+class LeftMenuView: UIView {}
+class DarkCoverView: UIView {}
+
 class BaseSlidingController: UIViewController {
     
     fileprivate var isMenuOpened = false
-    
+    fileprivate var centerViewController: UIViewController = HomeController() {
+        didSet {
+            oldValue.view.removeFromSuperview()
+            oldValue.removeFromParent()
+        }
+    }
     var redViewLeadingConstraint: NSLayoutConstraint!
     
-    let redView: UIView = {
-        let view = UIView()
+    let redView: CenterView = {
+        let view = CenterView()
         view.backgroundColor = .red
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    let blueView: UIView = {
-        let view = UIView()
+    let blueView: LeftMenuView = {
+        let view = LeftMenuView()
         view.backgroundColor = .blue
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    let darkCoverView: UIView = {
-        let view = UIView()
+    let darkCoverView: DarkCoverView = {
+        let view = DarkCoverView()
         view.backgroundColor = UIColor(white: 0, alpha: 0.7)
         view.alpha = 0
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -104,26 +113,26 @@ class BaseSlidingController: UIViewController {
     }
     
     func didSelectMenuItem(indexPath: IndexPath) {
-        print("Selected menu item:", indexPath.row)
         
         switch indexPath.row {
         case 0:
-            print("Homw")
+            changeCenterController(to: HomeController())
         case 1:
-            let listController = ListsController()
-            redView.addSubview(listController.view)
+            changeCenterController(to: ListsController())
         case 2:
-            let bookMarksController = UIViewController()
-            bookMarksController.view.backgroundColor = .purple
-            redView.addSubview(bookMarksController.view)
+            changeCenterController(to: BookmarksController())
         default:
             print("Moments")
-            
         }
         
         redView.bringSubviewToFront(darkCoverView)
-        
         closeMenu()
+    }
+    
+    fileprivate func changeCenterController(to viewController: UIViewController) {
+        redView.addSubview(viewController.view)
+        addChild(viewController)
+        centerViewController = viewController
     }
     
     fileprivate func performAnimations() {
@@ -158,10 +167,9 @@ class BaseSlidingController: UIViewController {
     }
     
     fileprivate func setupViewControllers() {
-        let homeController = HomeController()
         let menuController = MenuController()
         
-        let homeView = homeController.view!
+        let homeView = centerViewController.view!
         let menuView = menuController.view!
         
         homeView.translatesAutoresizingMaskIntoConstraints = false
@@ -192,7 +200,7 @@ class BaseSlidingController: UIViewController {
             darkCoverView.trailingAnchor.constraint(equalTo: redView.trailingAnchor)
         ])
         
-        addChild(homeController)
+        addChild(centerViewController)
         addChild(menuController)
     }
 

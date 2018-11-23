@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuItem {
+struct MenuItem {
     let icon: UIImage?
     let title: String
     

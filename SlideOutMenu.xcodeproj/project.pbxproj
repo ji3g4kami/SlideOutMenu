@@ -19,6 +19,7 @@
 		40805A5121A66416002AC3F9 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5021A66416002AC3F9 /* CustomImageView.swift */; };
 		40805A5321A6A6B4002AC3F9 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5221A6A6B4002AC3F9 /* MenuItemCell.swift */; };
 		40805A5521A7DAFC002AC3F9 /* ListsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5421A7DAFC002AC3F9 /* ListsController.swift */; };
+		40805A5721A7DCE8002AC3F9 /* BookmarksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5621A7DCE8002AC3F9 /* BookmarksController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		40805A5021A66416002AC3F9 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		40805A5221A6A6B4002AC3F9 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 		40805A5421A7DAFC002AC3F9 /* ListsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsController.swift; sourceTree = "<group>"; };
+		40805A5621A7DCE8002AC3F9 /* BookmarksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				403B7AED219A8CFE000B6A88 /* HomeController.swift */,
 				40805A4421A3FFCA002AC3F9 /* MenuController.swift */,
 				40805A5421A7DAFC002AC3F9 /* ListsController.swift */,
+				40805A5621A7DCE8002AC3F9 /* BookmarksController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40805A5721A7DCE8002AC3F9 /* BookmarksController.swift in Sources */,
 				40805A5121A66416002AC3F9 /* CustomImageView.swift in Sources */,
 				40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */,
 				40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */,
