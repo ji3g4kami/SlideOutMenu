@@ -18,6 +18,7 @@
 		40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4E21A657E4002AC3F9 /* SpacerView.swift */; };
 		40805A5121A66416002AC3F9 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5021A66416002AC3F9 /* CustomImageView.swift */; };
 		40805A5321A6A6B4002AC3F9 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5221A6A6B4002AC3F9 /* MenuItemCell.swift */; };
+		40805A5521A7DAFC002AC3F9 /* ListsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A5421A7DAFC002AC3F9 /* ListsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		40805A4E21A657E4002AC3F9 /* SpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacerView.swift; sourceTree = "<group>"; };
 		40805A5021A66416002AC3F9 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		40805A5221A6A6B4002AC3F9 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		40805A5421A7DAFC002AC3F9 /* ListsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				40805A4621A509B5002AC3F9 /* Base */,
 				403B7AED219A8CFE000B6A88 /* HomeController.swift */,
 				40805A4421A3FFCA002AC3F9 /* MenuController.swift */,
+				40805A5421A7DAFC002AC3F9 /* ListsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */,
 				40805A4D21A64C9C002AC3F9 /* CustomMenuHeaderView.swift in Sources */,
 				403B7AEE219A8CFE000B6A88 /* HomeController.swift in Sources */,
+				40805A5521A7DAFC002AC3F9 /* ListsController.swift in Sources */,
 				40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */,
 				40805A5321A6A6B4002AC3F9 /* MenuItemCell.swift in Sources */,
 				403B7AEC219A8CFE000B6A88 /* AppDelegate.swift in Sources */,

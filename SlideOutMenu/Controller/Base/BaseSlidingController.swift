@@ -103,6 +103,29 @@ class BaseSlidingController: UIViewController {
         performAnimations()
     }
     
+    func didSelectMenuItem(indexPath: IndexPath) {
+        print("Selected menu item:", indexPath.row)
+        
+        switch indexPath.row {
+        case 0:
+            print("Homw")
+        case 1:
+            let listController = ListsController()
+            redView.addSubview(listController.view)
+        case 2:
+            let bookMarksController = UIViewController()
+            bookMarksController.view.backgroundColor = .purple
+            redView.addSubview(bookMarksController.view)
+        default:
+            print("Moments")
+            
+        }
+        
+        redView.bringSubviewToFront(darkCoverView)
+        
+        closeMenu()
+    }
+    
     fileprivate func performAnimations() {
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: { [unowned self] in
             self.view.layoutIfNeeded()

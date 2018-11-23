@@ -21,7 +21,7 @@ class MenuItem {
 class MenuController: UITableViewController {
     
     let menuItems = [
-        MenuItem(icon: "profile", title: "Profile"),
+        MenuItem(icon: "profile", title: "Home"),
         MenuItem(icon: "lists", title: "Lists"),
         MenuItem(icon: "bookmarks", title: "Bookmarks"),
         MenuItem(icon: "moments", title: "Moments")
@@ -47,6 +47,11 @@ class MenuController: UITableViewController {
         cell.titleLabel.text = menuItem.title
         cell.iconImageView.image = menuItem.icon
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let baseSlidingViewController = UIApplication.shared.keyWindow?.rootViewController as? BaseSlidingController
+        baseSlidingViewController?.didSelectMenuItem(indexPath: indexPath)
     }
     
     deinit {
