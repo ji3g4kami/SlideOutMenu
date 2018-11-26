@@ -22,6 +22,7 @@ class BaseSlidingController: UIViewController {
         }
     }
     var redViewLeadingConstraint: NSLayoutConstraint!
+    var redViewTrailingConstraint: NSLayoutConstraint!
     
     let redView: CenterView = {
         let view = CenterView()
@@ -54,6 +55,13 @@ class BaseSlidingController: UIViewController {
         
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
         view.addGestureRecognizer(panGesture)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTapDismiss))
+        darkCoverView.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func handleTapDismiss() {
+        closeMenu()
     }
     
     @objc func handlePan(gesture: UIPanGestureRecognizer) {
@@ -65,6 +73,7 @@ class BaseSlidingController: UIViewController {
         x = min(menuWidth, x)
         x = max(0, x)
         redViewLeadingConstraint.constant = x
+        redViewTrailingConstraint.constant = x
         darkCoverView.alpha = x/menuWidth
         
         if gesture.state == .ended {
@@ -103,12 +112,14 @@ class BaseSlidingController: UIViewController {
     func openMenu() {
         isMenuOpened = true
         redViewLeadingConstraint.constant = menuWidth
+        redViewTrailingConstraint.constant = menuWidth
         performAnimations()
     }
 
     func closeMenu() {
         isMenuOpened = false
         redViewLeadingConstraint.constant = 0
+        redViewTrailingConstraint.constant = 0
         performAnimations()
     }
     
@@ -155,17 +166,18 @@ class BaseSlidingController: UIViewController {
         
         NSLayoutConstraint.activate([
             redView.topAnchor.constraint(equalTo: view.topAnchor),
-            redView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             redView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
         redViewLeadingConstraint = redView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0)
         redViewLeadingConstraint.isActive = true
         
+        redViewTrailingConstraint = redView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        redViewTrailingConstraint.isActive = true
         
         NSLayoutConstraint.activate([
             blueView.topAnchor.constraint(equalTo: view.topAnchor),
-            blueView.trailingAnchor.constraint(equalTo: redView.safeAreaLayoutGuide.leadingAnchor),
+            blueView.trailingAnchor.constraint(equalTo: redView.leadingAnchor),
             blueView.widthAnchor.constraint(equalToConstant: menuWidth),
             blueView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
