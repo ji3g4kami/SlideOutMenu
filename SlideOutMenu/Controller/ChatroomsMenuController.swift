@@ -26,15 +26,29 @@ class ChatroomsMenuController: UITableViewController {
         return chatRoomGroups.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    fileprivate class ChatroomHeaderLabel: UILabel {
+        override func drawText(in rect: CGRect) {
+            super.drawText(in: rect.insetBy(dx: 16, dy: 0))
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let label = ChatroomHeaderLabel()
         switch section {
         case 0:
-            return "UNREADS"
+            label.text = "UNREADS"
         case 1:
-            return "CHANNELS"
+            label.text = "CHANNELS"
         default:
-            return "DIRECT MESSAGES"
+            label.text = "DIRECT MESSAGES"
         }
+
+        label.textColor = UIColor(displayP3Red: 0.4745, green: 0.4078, blue: 0.4667, alpha: 1)
+        return label
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,11 +57,18 @@ class ChatroomsMenuController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = chatRoomGroups[indexPath.section][indexPath.row]
+        let cell = ChatroomMenuCell(style: .default, reuseIdentifier: nil)
+        let text = chatRoomGroups[indexPath.section][indexPath.row]
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .white
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        
+        let attributedText = NSMutableAttributedString(string: "#  ", attributes: [
+            .foregroundColor: UIColor(displayP3Red: 0.4745, green: 0.4078, blue: 0.4667, alpha: 1),
+            .font: UIFont.systemFont(ofSize: 18, weight: .regular)
+            ])
+        attributedText.append(NSMutableAttributedString(string: text, attributes: [.foregroundColor: UIColor.white]))
+        cell.textLabel?.attributedText = attributedText
         return cell
     }
  
