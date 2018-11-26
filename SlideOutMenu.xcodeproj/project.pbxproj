@@ -11,6 +11,7 @@
 		403B7AEE219A8CFE000B6A88 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403B7AED219A8CFE000B6A88 /* HomeController.swift */; };
 		403B7AF3219A8CFF000B6A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 403B7AF2219A8CFF000B6A88 /* Assets.xcassets */; };
 		403B7AF6219A8CFF000B6A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403B7AF4219A8CFF000B6A88 /* LaunchScreen.storyboard */; };
+		403C5DE621ABA20C00D449AB /* ChatroomsMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C5DE521ABA20C00D449AB /* ChatroomsMenuController.swift */; };
 		40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4421A3FFCA002AC3F9 /* MenuController.swift */; };
 		40805A4821A509EC002AC3F9 /* BaseSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */; };
 		40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4921A54E09002AC3F9 /* Constants.swift */; };
@@ -29,6 +30,7 @@
 		403B7AF2219A8CFF000B6A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		403B7AF5219A8CFF000B6A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		403B7AF7219A8CFF000B6A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403C5DE521ABA20C00D449AB /* ChatroomsMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomsMenuController.swift; sourceTree = "<group>"; };
 		40805A4421A3FFCA002AC3F9 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingController.swift; sourceTree = "<group>"; };
 		40805A4921A54E09002AC3F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				40805A4421A3FFCA002AC3F9 /* MenuController.swift */,
 				40805A5421A7DAFC002AC3F9 /* ListsController.swift */,
 				40805A5621A7DCE8002AC3F9 /* BookmarksController.swift */,
+				403C5DE521ABA20C00D449AB /* ChatroomsMenuController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40805A5721A7DCE8002AC3F9 /* BookmarksController.swift in Sources */,
+				403C5DE621ABA20C00D449AB /* ChatroomsMenuController.swift in Sources */,
 				40805A5121A66416002AC3F9 /* CustomImageView.swift in Sources */,
 				40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */,
 				40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */,
