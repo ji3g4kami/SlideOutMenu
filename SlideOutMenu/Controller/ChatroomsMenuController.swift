@@ -60,23 +60,25 @@ class ChatroomsMenuController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return filteredResults[section].count
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ChatroomMenuCell(style: .default, reuseIdentifier: nil)
         let text = filteredResults[indexPath.section][indexPath.row]
         cell.backgroundColor = .clear
-        cell.textLabel?.textColor = .white
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        cell.titleLabel.text = text
         
         let attributedText = NSMutableAttributedString(string: "#  ", attributes: [
             .foregroundColor: headerLabelColor,
             .font: UIFont.systemFont(ofSize: 18, weight: .regular)
             ])
         attributedText.append(NSMutableAttributedString(string: text, attributes: [.foregroundColor: UIColor.white]))
-        cell.textLabel?.attributedText = attributedText
+        cell.titleLabel.attributedText = attributedText
         return cell
     }
 }
