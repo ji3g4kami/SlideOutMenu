@@ -25,6 +25,8 @@ class ChatroomMenuContainerController: UIViewController {
         let chatroomsView = chatroomsMenuController.view!
         view.addSubview(chatroomsView)        
         chatroomsView.anchor(top: searchContainerView.bottomAnchor, leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+        
+        searchContainerView.searchBar.delegate = chatroomsMenuController
     }
     
 

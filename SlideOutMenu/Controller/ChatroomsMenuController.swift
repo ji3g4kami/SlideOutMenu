@@ -18,15 +18,20 @@ class ChatroomsMenuController: UITableViewController {
         ["jobs"],
         ["David", "Abby", "Jing Han", "映如"]
     ]
+    
+    var filteredResults = [[String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        filteredResults = chatRoomGroups
+        
         tableView.backgroundColor = menuBackgroundColor
         tableView.separatorStyle = .none
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return chatRoomGroups.count
+        return filteredResults.count
     }
     
     fileprivate class ChatroomHeaderLabel: UILabel {
@@ -56,12 +61,12 @@ class ChatroomsMenuController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return chatRoomGroups[section].count
+        return filteredResults[section].count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = ChatroomMenuCell(style: .default, reuseIdentifier: nil)
-        let text = chatRoomGroups[indexPath.section][indexPath.row]
+        let text = filteredResults[indexPath.section][indexPath.row]
         cell.backgroundColor = .clear
         cell.textLabel?.textColor = .white
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
@@ -74,9 +79,25 @@ class ChatroomsMenuController: UITableViewController {
         cell.textLabel?.attributedText = attributedText
         return cell
     }
- 
+}
 
 
-
-
+extension ChatroomsMenuController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        var results = [[String]]()
+        
+        if searchText.isEmpty {
+            filteredResults = chatRoomGroups
+            tableView.reloadData()
+            return
+        }
+        
+        chatRoomGroups.forEach { (group) in
+            let filteredGroup = group.filter { $0.lowercased().contains(searchText.lowercased()) }
+            results.append(filteredGroup)
+        }
+        
+        filteredResults = results
+        tableView.reloadData()
+    }
 }
