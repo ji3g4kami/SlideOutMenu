@@ -15,7 +15,7 @@ class DarkCoverView: UIView {}
 class BaseSlidingController: UIViewController {
     
     fileprivate var isMenuOpened = false
-    let menuController = ChatroomsMenuController()
+    let menuController = ChatroomMenuContainerController()
     fileprivate var centerViewController: UIViewController = UINavigationController(rootViewController: HomeController()) {
         didSet {
             oldValue.view.removeFromSuperview()

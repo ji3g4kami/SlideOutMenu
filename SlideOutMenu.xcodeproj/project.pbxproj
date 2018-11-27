@@ -14,6 +14,7 @@
 		403C5DE621ABA20C00D449AB /* ChatroomsMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C5DE521ABA20C00D449AB /* ChatroomsMenuController.swift */; };
 		403C5DE821ABAC1300D449AB /* ChatroomMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C5DE721ABAC1300D449AB /* ChatroomMenuCell.swift */; };
 		403C5DEA21ABAEBF00D449AB /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C5DE921ABAEBF00D449AB /* Extensions+UIView.swift */; };
+		403C5DEC21ABD8BC00D449AB /* ChatroomMenuContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403C5DEB21ABD8BC00D449AB /* ChatroomMenuContainerController.swift */; };
 		40805A4521A3FFCA002AC3F9 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4421A3FFCA002AC3F9 /* MenuController.swift */; };
 		40805A4821A509EC002AC3F9 /* BaseSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */; };
 		40805A4A21A54E09002AC3F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40805A4921A54E09002AC3F9 /* Constants.swift */; };
@@ -35,6 +36,7 @@
 		403C5DE521ABA20C00D449AB /* ChatroomsMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomsMenuController.swift; sourceTree = "<group>"; };
 		403C5DE721ABAC1300D449AB /* ChatroomMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomMenuCell.swift; sourceTree = "<group>"; };
 		403C5DE921ABAEBF00D449AB /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		403C5DEB21ABD8BC00D449AB /* ChatroomMenuContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatroomMenuContainerController.swift; sourceTree = "<group>"; };
 		40805A4421A3FFCA002AC3F9 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		40805A4721A509EC002AC3F9 /* BaseSlidingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSlidingController.swift; sourceTree = "<group>"; };
 		40805A4921A54E09002AC3F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				40805A5421A7DAFC002AC3F9 /* ListsController.swift */,
 				40805A5621A7DCE8002AC3F9 /* BookmarksController.swift */,
 				403C5DE521ABA20C00D449AB /* ChatroomsMenuController.swift */,
+				403C5DEB21ABD8BC00D449AB /* ChatroomMenuContainerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			files = (
 				403C5DEA21ABAEBF00D449AB /* Extensions+UIView.swift in Sources */,
 				40805A5721A7DCE8002AC3F9 /* BookmarksController.swift in Sources */,
+				403C5DEC21ABD8BC00D449AB /* ChatroomMenuContainerController.swift in Sources */,
 				403C5DE621ABA20C00D449AB /* ChatroomsMenuController.swift in Sources */,
 				40805A5121A66416002AC3F9 /* CustomImageView.swift in Sources */,
 				40805A4F21A657E4002AC3F9 /* SpacerView.swift in Sources */,

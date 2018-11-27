@@ -8,6 +8,9 @@
 
 import UIKit
 
+let menuBackgroundColor = UIColor(displayP3Red: 78/255, green: 56/255, blue: 73/255, alpha: 1)
+let headerLabelColor = UIColor(displayP3Red: 0.4745, green: 0.4078, blue: 0.4667, alpha: 1)
+
 class ChatroomsMenuController: UITableViewController {
     
     let chatRoomGroups = [
@@ -18,7 +21,7 @@ class ChatroomsMenuController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.backgroundColor = UIColor(displayP3Red: 78/255, green: 56/255, blue: 73/255, alpha: 1)
+        tableView.backgroundColor = menuBackgroundColor
         tableView.separatorStyle = .none
     }
     
@@ -42,8 +45,8 @@ class ChatroomsMenuController: UITableViewController {
         default:
             label.text = "DIRECT MESSAGES"
         }
-
-        label.textColor = UIColor(displayP3Red: 0.4745, green: 0.4078, blue: 0.4667, alpha: 1)
+        label.backgroundColor = menuBackgroundColor
+        label.textColor = headerLabelColor
         return label
     }
     
@@ -64,7 +67,7 @@ class ChatroomsMenuController: UITableViewController {
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         
         let attributedText = NSMutableAttributedString(string: "#  ", attributes: [
-            .foregroundColor: UIColor(displayP3Red: 0.4745, green: 0.4078, blue: 0.4667, alpha: 1),
+            .foregroundColor: headerLabelColor,
             .font: UIFont.systemFont(ofSize: 18, weight: .regular)
             ])
         attributedText.append(NSMutableAttributedString(string: text, attributes: [.foregroundColor: UIColor.white]))

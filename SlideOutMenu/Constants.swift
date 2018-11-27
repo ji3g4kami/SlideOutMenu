@@ -9,5 +9,8 @@
 import UIKit
 
 let screenBounds = UIScreen.main.bounds
-let menuWidth = UIScreen.main.bounds.width * 0.8
+var menuWidth: CGFloat {
+  return min(UIScreen.main.bounds.width, UIScreen.main.bounds.height) * 0.8
+}
+//let menuWidth: CGFloat = 300
 let velocityOpenThreshold: CGFloat = 500
