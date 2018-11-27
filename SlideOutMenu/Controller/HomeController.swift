@@ -24,7 +24,21 @@ class HomeController: UITableViewController, UIGestureRecognizerDelegate {
     
     fileprivate func setupNavigationItems() {
         navigationItem.title = "Home"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(handleOpen))
+        setupCircularNavigationButton()
+    }
+    
+    fileprivate func setupCircularNavigationButton() {
+        let image = #imageLiteral(resourceName: "Peter").withRenderingMode(.alwaysOriginal)
+        let customView = UIButton(type: .system)
+        customView.setImage(image, for: .normal)
+        customView.addTarget(self, action: #selector(handleOpen), for: .touchUpInside)
+        customView.imageView?.contentMode = .scaleAspectFit
+        customView.layer.cornerRadius = 20
+        customView.clipsToBounds = true
+        customView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        customView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        let barButtonItem = UIBarButtonItem(customView: customView)
+        navigationItem.leftBarButtonItem = barButtonItem
     }
     
     @objc func handleOpen() {

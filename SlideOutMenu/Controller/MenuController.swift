@@ -32,6 +32,11 @@ class MenuController: UITableViewController {
         tableView.separatorStyle = .none
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(false)
+        tableView.reloadData()
+    }
+    
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let customHeaderView = CustomMenuHeaderView()
         return customHeaderView
